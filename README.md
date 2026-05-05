@@ -19,26 +19,30 @@ Please refer to the [`QUICK_START.md`](QUICK_START.md) file for detailed instruc
 ### 1. User Registration (`POST /api/auth/register`)
 
 {
-  "email": "vipin1589.be23@chitkarauniversity.edu.in",
-  "name": "Vipin Sohal",
-  "rollNo": "2311981589",
-  "accessCode": "EXfvDp",
-  "mobileNo": "8219839956",
-  "githubUsername": "vipin08"
+  "email": "EMAIL_ADDRESS",
+  "name": "Name",
+  "rollNo": "RollNo",
+  "accessCode": "AccessCode",
+  "mobileNo": "MobileNo",
+  "githubUsername": "githubUsername"
 }
 
 ### 2. User Authentication/Token (`POST /api/auth/token`)
 
 {
-  "email": "vipin1589.be23@chitkarauniversity.edu.in",
-  "clientID": "e0f1851b-e385-4f7b-8a57-5bcfadf11ff0",
-  "clientSecret": "7f3a9c21-5d8e-4b6a-9f02-3c7d1e8a6b4f"
+  "email": "EMAIL_ADDRESS",
+  "clientID": "CLIENT_ID",
+  "clientSecret": "CLIENT_SECRET"
 }
 
 ### 3. Fetch Notifications (`GET /api/notifications`)
 
 {
-    "error": "No token provided"
+  "notifications": [
+    { "Type": "Result", "Message": "mid-sem" },
+    { "Type": "Placement", "Message": "CSX hiring" },
+    { "Type": "Event", "Message": "farewell" }
+  ]
 }
 
 ### 4. Mark Notification as Read (`PUT /api/notifications/:id`)
@@ -53,7 +57,7 @@ Please refer to the [`QUICK_START.md`](QUICK_START.md) file for detailed instruc
   "stack": "backend",
   "level": "info",
   "package": "auth-service",
-  "message": "User Vipin Sohal successfully tested APIs"
+  "message": "User successfully tested APIs"
 }
 
 ## Key Features Implemented
@@ -63,3 +67,5 @@ Please refer to the [`QUICK_START.md`](QUICK_START.md) file for detailed instruc
 - **Scalable Database Schema:** Designed to handle 50,000+ students and 2.5 million+ notifications efficiently using PostgreSQL.
 - **Security:** Token-based authentication (JWT) with secure password hashing.
 - **Frontend Optimization:** Pagination and responsive real-time updates.
+
+## You can check the project output screenshots inside the `notification_app_fe/Photos` directory.
