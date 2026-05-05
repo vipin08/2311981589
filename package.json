@@ -1,0 +1,23 @@
+{
+  "name": "notification-platform",
+  "version": "1.0.0",
+  "description": "Campus Hiring Evaluation - Full Stack Notification Platform",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && cd notification_app_be && npm install && cd ../notification_app_fe && npm install && cd ..",
+    "dev:backend": "cd notification_app_be && npm run dev",
+    "dev:frontend": "cd notification_app_fe && npm run dev",
+    "start:backend": "cd notification_app_be && npm start",
+    "start:frontend": "cd notification_app_fe && npm start",
+    "build:backend": "cd notification_app_be && npm run build",
+    "build:frontend": "cd notification_app_fe && npm run build"
+  },
+  "keywords": [
+    "notification",
+    "campus",
+    "hiring",
+    "full-stack"
+  ],
+  "author": "Campus Hiring Evaluation",
+  "license": "ISC"
+}
